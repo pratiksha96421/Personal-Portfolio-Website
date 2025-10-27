@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratiksha Bombale | Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <h2>Pratiksha Bombale | Personal Portfolio Website</h2>
+            <button id="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav>
+                <a href="#intro">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div> <!-- .topbar -->
+
+        <!-- hero / intro inside header -->
+        <div id="intro" class="intro-full animate-on-scroll">
+            <h1>Hi — I'm Pratiksha</h1>
+            <p>I'm a web developer who builds responsive interfaces and delightful user experiences.</p>
+        </div>
+
+        <p class="intro-short animate-on-scroll">Hi — I'm Pratiksha, web developer.</p>
+
+        <img id="img1" class="animate-on-scroll scale-on-view" src="img1.png" alt="Hero image">
+
+    </header>
+
+    <section id="skills" class="animate-on-scroll" aria-label="Skills">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+            <li class="skill-item animate-on-scroll scale-on-view">
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <!-- Code SVG icon -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path d="M8.12 14.12L3 9l5.12-5.12" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15.88 9.88L21 15l-5.12 5.12" stroke="#fff" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="skill-body">
+                        <h4>Programming Languages</h4>
+                        <p>C, C++, Java, Python</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="skill-item animate-on-scroll scale-on-view">
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <!-- Globe SVG -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="#fff" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 12h20M12 2c2.5 3 2.5 9 0 14M12 2c-2.5 3-2.5 9 0 14" stroke="#fff"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="skill-body">
+                        <h4>Web Development</h4>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="skill-item animate-on-scroll scale-on-view">
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <!-- Database SVG -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="12" cy="5" rx="8" ry="3" stroke="#fff" stroke-width="1.4" />
+                            <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" stroke="#fff" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" stroke="#fff" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="skill-body">
+                        <h4>Databases</h4>
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="skill-item animate-on-scroll scale-on-view">
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <!-- Tools SVG -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 3l-6 6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M14 3l6 6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11 13l-7 7" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="skill-body">
+                        <h4>Tools</h4>
+                        <p>Git</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="projects" class="animate-on-scroll" aria-label="Projects">
+        <h2>Projects</h2>
+        <ul class="projects-grid">
+            <li class="project-item animate-on-scroll scale-on-view">
+                <article class="project-card">
+                    <div class="project-thumb" aria-hidden="true">
+                        <!-- use the attached screenshot for Project 1 -->
+                        <img src="img2.png" alt="Simple Todo List Web App screenshot">
+                    </div>
+                    <div class="project-body">
+                        <h4>Simple Todo List Web App</h4>
+                        <p>Developed a responsive and user-friendly Todo List application using HTML, CSS, and
+                            JavaScript. Features include task creation, editing, completion tracking, delete and undo
+                            actions, and data persistence via localStorage.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Highlights:</strong> Snackbar undo system, local storage integration, responsive UI
+                        </p>
+                        <p><a class="btn-link" href="https://github.com/pratiksha96421/-Simple-Todo-List-Web-App.git"
+                                target="_blank" rel="noopener">Source (GitHub)</a> · <a class="btn-link" href="#"
+                                target="_blank" rel="noopener">Live</a></p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="project-item animate-on-scroll scale-on-view">
+                <article class="project-card">
+                    <div class="project-thumb" aria-hidden="true">
+                        <!-- second project uses the attached screenshot: save it as project2-screenshot.png in the portfolio folder -->
+                        <img src="img3.png" alt="Project 2 screenshot">
+                    </div>
+                    <div class="project-body">
+                        <h4>Project Two</h4>
+                        <p>A responsive demo application showcasing client-side interactivity and API usage. It
+                            demonstrates dynamic DOM updates, async data fetching, and responsive layout techniques.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Highlights:</strong> Asynchronous API integration, responsive UI, polished
+                            micro-interactions.</p>
+                        <p><a href="#" class="btn-link" target="_blank" rel="noopener">Live</a> · <a href="#"
+                                class="btn-link" target="_blank" rel="noopener">Source</a></p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="project-item animate-on-scroll scale-on-view">
+                <article class="project-card">
+                    <div class="project-thumb" aria-hidden="true">
+                        <img src="project3.png" alt="Project 3 screenshot">
+                    </div>
+                    <div class="project-body">
+                        <h4>Project Three</h4>
+                        <p>A short description of Project Three — summary and links to details.</p>
+                        <p><a href="#" class="btn-link">Live</a> · <a href="#" class="btn-link">Source</a></p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="animate-on-scroll" aria-label="Contact">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <form id="contact-form" class="contact-form" aria-label="Contact form">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Send</button>
+                    <button type="reset" class="btn-secondary">Reset</button>
+                </div>
+            </form>
+
+            <aside class="contact-info">
+                <p>Alternatively, email me at <a class="btn-link"
+                        href="pratikshabombale2005@gmail.com">pratikshabombale2005@gmail.com</a></p>
+
+                <div class="socials" aria-label="Social links">
+                    <a class="social-link" href="www.linkedin.com/in/pratiksha-bombale-3b42ab344" target="_blank"
+                        rel="noopener" aria-label="LinkedIn">
+                        <!-- LinkedIn SVG -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="2" stroke="#fff" stroke-width="1"
+                                fill="none" />
+                            <path d="M6 9.5v8" stroke="#fff" stroke-width="1.4" stroke-linecap="round" />
+                            <circle cx="6" cy="6.5" r="1.2" fill="#fff" />
+                            <path d="M10.5 16h3v-4c0-1.1.9-2 2-2s2 .9 2 2v4h3" stroke="#fff" stroke-width="1.4"
+                                stroke-linecap="round" fill="none" />
+                        </svg>
+                    </a>
+
+                    <a class="social-link" href="https://unstop.com/u/pratibom28482" target="_blank" rel="noopener"
+                        aria-label="Unstop">
+                        <!-- Generic trophy/award icon for Unstop -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path d="M7 3h10v4a3 3 0 01-3 3H10A3 3 0 017 7V3z" stroke="#fff" stroke-width="1.2"
+                                fill="none" />
+                            <path d="M7 14a5 5 0 008 0" stroke="#fff" stroke-width="1.2" stroke-linecap="round"
+                                fill="none" />
+                        </svg>
+                    </a>
+
+                    <a class="social-link" href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank"
+                        rel="noopener" aria-label="Naukri">
+                        <!-- Generic briefcase icon for Naukri -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <rect x="3" y="7" width="18" height="12" rx="2" stroke="#fff" stroke-width="1.2"
+                                fill="none" />
+                            <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="#fff" stroke-width="1.2" fill="none" />
+                        </svg>
+                    </a>
+
+                    <a class="social-link" href="https://github.com/pratiksha96421" target="_blank" rel="noopener"
+                        aria-label="GitHub">
+                        <!-- GitHub SVG -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path
+                                d="M12 2C7.6 2 4 5.6 4 10c0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4v-1.4c-2.2.5-2.7-1-2.7-1-.4-1-1-1.2-1-1.2-.8-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .8 1.4 2.2 1 2.7.8.1-.6.3-1 .5-1.2-1.7-.2-3.5-.8-3.5-3.5 0-.8.3-1.5.8-2-.1-.2-.4-1 .1-2 0 0 .6-.2 2 .8a6.7 6.7 0 013.6 0c1.4-1 2-.8 2-.8.5 1 .2 1.8.1 2 .5.5.8 1.2.8 2 0 2.7-1.8 3.3-3.5 3.5.3.3.5.8.5 1.6v2.3c0 .2.1.5.5.4C17.7 16.5 20 13.5 20 10c0-4.4-3.6-8-8-8z"
+                                stroke="#fff" stroke-width="0.6" fill="#fff" />
+                        </svg>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle + scrollspy + animate-on-scroll
+        (function () {
+            const btn = document.getElementById('menu-btn');
+            const topbar = document.querySelector('.topbar');
+            const navLinks = document.querySelectorAll('.topbar nav a');
+
+            // menu toggle
+            if (btn && topbar) {
+                btn.addEventListener('click', function () {
+                    const isOpen = topbar.classList.toggle('open');
+                    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+                navLinks.forEach(a => a.addEventListener('click', () => {
+                    topbar.classList.remove('open');
+                    btn.setAttribute('aria-expanded', 'false');
+                }));
+            }
+
+            // Scrollspy: highlight active nav link
+            const sections = document.querySelectorAll('section[id]');
+            if (sections.length) {
+                const spy = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        const id = entry.target.id;
+                        const link = document.querySelector('.topbar nav a[href="#' + id + '"]');
+                        if (entry.isIntersecting) {
+                            document.querySelectorAll('.topbar nav a').forEach(l => l.classList.remove('active'));
+                            if (link) link.classList.add('active');
+                        }
+                    });
+                }, { root: null, rootMargin: '0px 0px -40% 0px', threshold: 0 });
+                sections.forEach(s => spy.observe(s));
+            }
+
+            // page load class to trigger initial body fade
+            document.addEventListener('DOMContentLoaded', function () {
+                // tiny delay so CSS transition is visible
+                requestAnimationFrame(() => {
+                    document.body.classList.add('is-loaded');
+
+                    // reveal any animate-on-scroll elements that are already in view on load
+                    // (helps when elements are visible immediately and IntersectionObserver may fire late)
+                    els.forEach((el, idx) => {
+                        try {
+                            const r = el.getBoundingClientRect();
+                            if (r.top < (window.innerHeight * 0.9)) {
+                                setTimeout(() => el.classList.add('in-view'), idx * 60);
+                            }
+                        } catch (e) { /* ignore if element isn't ready */ }
+                    });
+                });
+            });
+
+            // Animate-on-scroll for elements with the class
+            const els = Array.from(document.querySelectorAll('.animate-on-scroll'));
+            if (els.length) {
+                const aniObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            el.classList.add('in-view');
+                            // stagger for skill cards
+                            if (el.classList.contains('skill-item')) {
+                                const idx = Array.from(el.parentElement.children).indexOf(el);
+                                el.style.transitionDelay = (idx * 70) + 'ms';
+                            }
+                            aniObserver.unobserve(el);
+                        }
+                    });
+                }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
+
+                els.forEach((el) => aniObserver.observe(el));
+            }
+
+            // Contact form handler: open mailto with filled content (fallback) and simple client validation
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const name = contactForm.name.value.trim();
+                    const email = contactForm.email.value.trim();
+                    const message = contactForm.message.value.trim();
+                    if (!name || !email || !message) {
+                        alert('Please fill all fields before sending.');
+                        return;
+                    }
+                    const subject = encodeURIComponent('Portfolio contact from ' + name);
+                    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+                    // open default mail client
+                    window.location.href = 'mailto:your-email@example.com?subject=' + subject + '&body=' + body;
+                });
+            }
+        })();
+    </script>
+
+
+
+
+</body>
+
+</html>
