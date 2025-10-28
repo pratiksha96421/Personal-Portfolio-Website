@@ -128,7 +128,7 @@ header {
 
     .topbar nav a {
         padding: 0.6rem 1rem;
-        display: block
+        display: block;
     }
 }
 
@@ -213,14 +213,56 @@ header {
     transform: translateY(-50%);
     max-width: 48%;
     background: rgba(255, 255, 255, 0.03);
-    padding: 1.25rem 1.5rem;
+    padding: 2rem;
     color: #fff;
     font-weight: bolder;
     z-index: 5;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#intro p {
-    line-height: 2.0;
+#intro h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #fff, #a3e635);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#intro .tagline {
+    font-size: 1.4rem;
+    color: #a3e635;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+#intro .intro-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #d1d5db;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cta-buttons .btn-primary,
+.cta-buttons .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-buttons .btn-primary:hover,
+.cta-buttons .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(163, 230, 53, 0.2);
 }
 
 @media (max-width: 900px) {
@@ -591,12 +633,16 @@ body.is-loaded {
 }
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.02);
-    padding: 1rem;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form label {
